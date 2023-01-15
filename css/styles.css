@@ -22,18 +22,30 @@
 }
 
 body {
-  background-color: rgb(154 211 232);
+  background-color: lightsteelblue;
 }
 
-p {
+h1 {
   color: black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding-top: 15pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 32pt;
+  line-height: 24pt;
 }
 
-img {
+.flag-image {
   float: right;
-  margin-right: 15px;
+}
+
+.info-font {
+  color: black;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16pt;
+  line-height: 24pt;
+}
+
+.line-break {
+  margin-top: 5%;
+  border-bottom: 2px solid black;
+  width: 100%;
+  float: right;
 }
