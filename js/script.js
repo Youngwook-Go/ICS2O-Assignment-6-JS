@@ -6,9 +6,6 @@
 
 "use strict"
 
-// timezone 그냥 UTC면 UTC 0인거
-
-
 /**
  * Check servie worker.
  */
@@ -36,7 +33,7 @@ const getCountryList = async (URLAddress) => {
     
     // main info
     document.getElementById("country-name").innerHTML = "<h1>" + country.name.common + "</h1>"
-    document.getElementById("country-flag").innerHTML = "<img src='https://flagcdn.com/h240/" + country.cca2.toLowerCase() + ".png'>"
+    document.getElementById("country-flag").innerHTML = "<img src='https://flagcdn.com/h240/" + country.cca2.toLowerCase() + ".png' alt='country flag'>"
     document.getElementById("country-info").innerHTML = 
       "The official name is : " + country.name.official +
       "<br>The native name is : " + JSON.stringify(Object.values(country.name.nativeName)[0].common).replaceAll('"', '') + "(" + JSON.stringify(Object.values(country.name.nativeName)[0].official).replaceAll('"', '') + ")" +
